@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["import", "promise", "node", "typescript", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "rules": {
+    "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }]
+  },
+  "ignorePatterns": ["dist", "node_modules", ".vite", "coverage"],
+  "overrides": [
+    {
+      "files": ["apps/web/**/*.{ts,tsx}"],
+      "plugins": ["import", "promise", "node", "typescript", "unicorn", "oxc", "react", "jsx-a11y"]
+    }
+  ]
+}

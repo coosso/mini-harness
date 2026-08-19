@@ -1,0 +1,24 @@
+{
+  "name": "@code-harness/tui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.tsx",
+    "start": "tsx src/index.tsx",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@code-harness/demo-1": "workspace:*",
+    "@code-harness/demo-2": "workspace:*",
+    "ink": "^7.1.1",
+    "react": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
